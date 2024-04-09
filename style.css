@@ -4,11 +4,16 @@
 }
 
 body {
-    background-color: blue;
+    background-color: rgb(40, 69, 95);
 }
 
 #sketch-area {
     display: flex;
+    flex-wrap: wrap;
     background-color: white;
     margin: 100px auto; 
+}
+
+.cell {
+    border: 1px solid whitesmoke;
 }

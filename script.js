@@ -5,6 +5,11 @@ let cols = 16;
 const sketchArea = document.querySelector("#sketch-area");
 sketchArea.style.width = sketchArea.style.height = `${gridSide}px`;
 
+function changeBackgroundColor () {
+    this.style.backgroundColor = "orange";
+}
+
+
 function createGridCells () {
     for (let i = 0; i < (rows * cols); i++) {
         const gridCell = document.createElement("div");
@@ -15,6 +20,8 @@ function createGridCells () {
         gridCell.classList.add("cell");
 
         sketchArea.appendChild(gridCell);
+
+        gridCell.addEventListener("mouseover", changeBackgroundColor); 
     }
 
 }
