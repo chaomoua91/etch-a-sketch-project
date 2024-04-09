@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: blue;
+}
+
+#sketch-area {
+    display: flex;
+    background-color: white;
+    margin: 100px auto; 
+}
