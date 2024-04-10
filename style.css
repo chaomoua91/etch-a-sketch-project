@@ -35,10 +35,12 @@ h6 {
 
 
 #sketch-area {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: white;
-    margin: 100px auto; 
+    width: 500px;
+    height: 500px;
+    display: grid;
+    border: 1px solid black;
+    
+    
 }
 
 .select-button {
@@ -65,6 +67,7 @@ h6 {
     align-items: center;
     width: 500px;
     justify-content: space-around;
+    margin-bottom: 20px;
 }
 
 .footer {
@@ -72,6 +75,7 @@ h6 {
     flex-direction: row;
     justify-content: space-between;
     width: 500px;
+    margin-top: 20px;
 }
 
 .cell {
