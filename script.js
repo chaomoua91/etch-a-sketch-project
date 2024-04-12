@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     createBoard(16);
-    console.log ("hi");
+    let selectButton = document.querySelector("#popup");
+    selectButton.addEventListener("click", function () {
+        let size = getSize();
+        createBoard(size);
+    })
 }
 )
 
@@ -9,6 +13,15 @@ function createBoard (size) {
 
     board.style.gridTemplateColumns = `repeat (${size}, 1fr)`;
     board.style.gridTemplateRows = `repeat (${size}, 1fr)`;
+
+    let numDivs = size * size;
+
+    for (let i = 0; i < numDivs; i++) {
+        let div = document.createElement("div");
+        div.style.backgroundColor = "black"
+        board.insertAdjacentElement("beforeend", div)
+    }
+
 }
 
 
